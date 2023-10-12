@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Générateur de mot de passe">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="title">Générateur de mot de passe</h1>
+    </header>
+    <form action="#" class="form-container">
+        <div class="form-group">
+            <label for="input-password">Votre mot de passe</label>
+            <div class="input-group">
+                <input type="text" class="input-password" id="input-password" placeholder="votre mot de passe ..." disabled>
+                <img class="img-copy" src="./icons/copy.svg" alt="icone de copy">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="label-length">Taille du mot de passe : <span class="label-length-value">10</span></label>
+            <input type="range" class="label-length" id="label-length" min="6" max="25" value="10">
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" class="lowercase" id="lowercase">
+            <label for="lowercase">Contient des caractères minuscules</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" class="uppercase" id="uppercase">
+            <label for="uppercase">Contient des caractères majuscules</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" class="number" id="number">
+            <label for="number">Contient des nombres</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" class="special" id="special">
+            <label for="special">Contient des symboles spéciaux</label>
+        </div>
+        <button class="btn">Générer</button>
+        <p class="error-message"></p>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
