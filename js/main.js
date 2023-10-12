@@ -14,6 +14,10 @@ form.addEventListener("submit", evt => {
     generatePassword();
 }, false)
 
+
+/**
+ * Fonction de génération de mot de passe
+ */
 let inputPassword = document.querySelector(".input-password");
 function generatePassword() {
     const lowercase = document.querySelector('.lowercase').checked;
